@@ -3,6 +3,7 @@
 
 import cv2
 import numpy as np
+
 def Pixel():
     imgFile = "image/coffee.jpg"
     img = cv2.imread(imgFile)
