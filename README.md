@@ -3,13 +3,13 @@
 
 import cv2
 import numpy as np
-
 def Pixel():
     imgFile = "image/coffee.jpg"
     img = cv2.imread(imgFile)
 
     px = img[100,200]
     print(px)
+Pixel()
 
 """img[x,y] 라는 것은 해당 이미지 파일의 좌표값의 BGR 값을 나타냅니다.
 따라서 해당 코드의 출력결과인 [198  202 207] 은 이미지의 [100,200] 좌표의 픽셀값이
@@ -33,15 +33,12 @@ px = img[100,200,2]  - 100,200  # 좌표 픽셀의 Red 값으로 읽을 수 있�
 
 import cv2
 import numpy as np
-
 def Pixel():
     imgFile = "image/coffee.jpg"
     img = cv2.imread(imgFile)
-
     img[100,200,2] = 100
     px = img[100,200,2]
     print(px)
-
 Pixel()
 img[100,200,2] = 100
 
